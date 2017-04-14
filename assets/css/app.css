@@ -1,0 +1,354 @@
+body{
+  font-family: 'Muli' , sans-serif;
+  color:white;
+}
+.nopadding{
+  padding: 0 !important;
+}
+
+.tester{
+  border: 1px solid black;
+}
+
+.header-logo{
+  background: url(../images/CA_NL4.png) no-repeat;
+  height: 40px;
+  background-size: contain;
+  margin-top: 5px;
+  background-position: 50% 50%;
+}
+
+@media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+    }
+    .navbar>.container .navbar-brand-centered,
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+}
+
+.navbar {
+    border-radius: inherit !important;
+    margin-bottom: 0px !important;
+}
+
+.navbar-black{
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+.menu-a{
+  color: #cacaca !important;
+font-size: 20px;
+}
+.menu-a:hover {
+  background-color: transparent !important;
+  /*rgb(103, 103, 103)*/
+  color: white !important;
+cursor: pointer;
+  -webkit-transition: color 750ms;
+-moz-transition: color 750ms;
+-o-transition: color 750ms;
+-ms-transition: color 750ms;
+transition: color 750ms;
+}
+.menu-a:focus {
+  color: inherit !important;
+  background-color: transparent !important;
+}
+.menu-a:active{
+    color:  white !important;
+}
+.menu-a:active{
+    color:  white !important;
+}
+
+/*** SLIDER START **/
+
+#first-slider .main-container {
+  padding: 0;
+}
+
+
+#first-slider .slide1 h3, #first-slider .slide2 h3, #first-slider .slide3 h3, #first-slider .slide4 h3{
+    color: #fff;
+    font-size: 30px;
+      text-transform: uppercase;
+      font-weight:700;
+}
+
+#first-slider .slide1 h4,#first-slider .slide2 h4,#first-slider .slide3 h4,#first-slider .slide4 h4{
+    color: #fff;
+    font-size: 30px;
+      text-transform: uppercase;
+      font-weight:700;
+}
+#first-slider .slide1 .text-left ,#first-slider .slide3 .text-left{
+    padding-left: 40px;
+}
+
+
+#first-slider .carousel-indicators {
+  bottom: 0;
+}
+#first-slider .carousel-control.right,
+#first-slider .carousel-control.left {
+  background-image: none;
+}
+#first-slider .carousel .item {
+  height: 100%;
+  width:100%;
+}
+
+.carousel-inner .item .container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+#first-slider h3{
+  animation-delay: 1s;
+}
+#first-slider h4 {
+  animation-delay: 2s;
+}
+#first-slider h2 {
+  animation-delay: 3s;
+}
+
+
+#first-slider .carousel-control {
+    width: 6%;
+        text-shadow: none;
+}
+
+
+#first-slider h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#first-slider .p {
+  padding-top: 125px;
+  text-align: center;
+}
+
+#first-slider .p a {
+  text-decoration: underline;
+}
+#first-slider .carousel-indicators li {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255,255,255,.4);
+  border:none;
+}
+#first-slider .carousel-indicators .active{
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+  border:none;
+}
+
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.carousel-control .fa-angle-right, .carousel-control .fa-angle-left {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+}
+.carousel-control .fa-angle-left{
+    left: 50%;
+    width: 38px;
+    height: 38px;
+    margin-top: -15px;
+    font-size: 60px;
+    color: #fff;
+}
+.carousel-control .fa-angle-right{
+    right: 50%;
+    width: 38px;
+    height: 38px;
+    margin-top: -15px;
+    font-size: 60px;
+    color: #fff;
+}
+.carousel-control {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+#first-slider .slide1 {
+    background-image: url(../images/bmw/bmw-slider.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#first-slider .slide2 {
+  background-image: url(../images/mercedes/mercedes-slider.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+        background-position: center;
+}
+#first-slider .slide3 {
+  background-image: url(../images/audi/audi-slider-2.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+            background-position: center;
+}
+#first-slider .slide4 {
+  background-image: url(../images/volkswagen/volkswagen-slider.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+              background-position: center;
+
+}
+    /*** SLIDE END ***/
+
+
+    .icons-menu-top{
+      font-size: 20px !important;
+    }
+
+.navbar-main-home{
+      background-color: rgba(0, 0, 0, 0.47);
+}
+.modal-content{
+  border-radius: inherit !important;
+}
+.li-tabs-navbar{
+      width: 50%;
+}
+.mod-padding{
+  padding:0 !important;
+}
+
+.nav-tabs {
+  text-align: center;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+.nav-tabs > li {
+margin-bottom: inherit !important;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: rgb(217, 83, 79);
+}
+.nav-tabs > li > a {
+    margin-right: inherit !important;
+    border: none !important;
+    border-radius: inherit !important;
+    color: rgb(113, 113, 113);
+}
+.btn-arround{
+  border-radius: inherit !important;
+}
+.connexion-form{
+  padding: 20px;
+  color: #616161;
+  text-align: center;
+}
+.black-main{
+  color: black;
+}
+
+.main-title-car{
+  border-bottom: 1px solid #b5b5b5;
+  font-size: 30px;
+}
+.main-text-car{
+  text-align: center;
+font-size: 22px;
+}
+.second-text-car{
+  text-align: center;
+font-size: 18px;
+}
+.slider{
+height: 370px;
+border: 1px solid grey;
+}
+.bordered{
+  border-right: 1px solid grey;
+}
+.marged{
+  margin-top: 25px;
+}
+.second-vue-title-car{
+  border-bottom: 1px solid #b5b5b5;
+}
+.greyed{
+  background-color: #e8e8e8;
+  margin-top: 15px;
+}
+.border-top-main{
+  border-top: 1px solid #b5b5b5;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.mid-title{
+  color : grey;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+.end-title{
+  color : rgba(128, 128, 128, 0.50);
+  text-align: center;
+}
+@media screen and (max-width:768px){
+  .mid-title{
+    color : grey;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
